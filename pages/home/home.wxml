@@ -2,6 +2,17 @@
 
 <!-- 列表展示 wx:for item -->
 <view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
+<view>{{list.Server}}</view>
+<view>{{list.Date}}</view>
 
 <!-- 事件监听改变数据 -->
 
@@ -15,5 +26,3 @@
 	<!--点击弹窗授权获取用户信息 参考https://developers.weixin.qq.com/miniprogram/dev/component/button.html -->
 	<button open-type="getUserInfo" size="mini" bindgetuserinfo="gain_userInfo">获取授权</button>
 </view>
-
-<view>{{list}}</view>

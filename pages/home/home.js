@@ -15,7 +15,8 @@ Page({
       {id : "1", name : "高方原", age : "24", sex : "男", work : "前端"},
       {id : "2", name : "张三", age : "30", sex : "男", work : "后端"}
     ],
-    listd: []
+    listd: [],
+    list: []
   },
   plus_1() {
     this.setData({
@@ -34,13 +35,15 @@ Page({
    * 生命周期函数--监听页面加载 http://123.207.32.32:8000/recommend
    */
   onLoad() {
+    console.log("onload")
     wx.request({
       url: 'http://123.207.32.32:8000/recommend',
       success: (res) => {
         console.log(res);
-        const data = res.data.listd;
+        const data = res.header;
         this.setData({
-          listd: data
+          listd: data,
+          list: data
         })
       }
     })
@@ -78,14 +81,20 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+    console.log("页面下拉")
+  },
 
+// 监听页面滚动
+  onPageScroll(roll) {
+    // roll传参 滑动的位置
+    // console.log(roll)
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    console.log("页面到底部")
   },
 
   /**

@@ -27,5 +27,6 @@
         "selectedIconPath": "assets/img/about_a.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap11.json"
 }
