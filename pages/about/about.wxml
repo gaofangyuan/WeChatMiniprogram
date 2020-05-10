@@ -1,5 +1,13 @@
 <!--pages/about/about.wxml-->
 <text>关于\n</text>
-<!-- 默认text文本不可选中 设置selectable属性控制 -->
-<text selectable="true">关于我们\n</text>
-<text></text>
+<!-- 默认text文本不可选中 设置selectable属性控制 也可以只写上selectable默认false改为true -->
+<text selectable='{{true}}'>关于我们\n</text>
+<text selectable>{{introduce}}\n</text>
+<!-- space设置空格大小 默认nbsp 'ensp';'emsp';'nbsp' -->
+<text>联系 我们\n</text>
+<text space="nbsp">联系 我们\n</text>
+<text space="ensp">联系 我们\n</text>
+<text space="emsp">联系 我们\n</text>
+<!-- decode解码文本 -->
+<text>1&emsp;1\n</text>
+<text decode>1&emsp;1\n</text>

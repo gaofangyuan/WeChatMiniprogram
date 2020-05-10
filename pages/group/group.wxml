@@ -1,0 +1,66 @@
+<!--pages/group/group.wxml-->
+<!-- button组件 -->
+<view>
+	<button>按钮</button>
+	<!-- size属性 变小mini -->
+	<button size='mini'>按钮</button>
+	<!-- type属性 'primary';'default';'warn' 默认default属性 -->
+	<button size='mini' type='default'>按钮</button>
+	<button size='mini' type='primary'>按钮</button>
+	<button size='mini' type='warn'>按钮</button>
+	<!-- plain属性 镂空效果 -->
+	<button size='mini' plain>按钮</button>
+	<!-- disabled属性 不可点击 -->
+	<button size='mini' disabled>按钮</button>
+	<!-- loading属性 可以绑定变量设置false、true值 -->
+	<button size='mini' loading='{{isLoad}}' bindtap="is_load">按下停止加载</button>
+	<!-- hover-class 设置点击样式 配合wxss实现 -->
+	<button size='mini' hover-class="btn-hover">按下变色</button>
+</view>
+
+<!-- input组件 -->
+<view>
+  <!-- confirm-type属性 设置键盘右下角按钮'send'发送;'search'搜索;'next'下一个;'go'前往;'done'完成 -->
+  <input confirm-type="search" placeholder="请输入" />
+  <!-- 监听事件bindinput;输入时触发 bindfocus;输入框聚焦时触发 bindblur;输入框失去焦点时触发 -->
+  <input bindinput="input_in" bindfocus="input_focus" bindblur="inout_blur"></input>
+</view>
+
+<!-- view组件 -->
+<view>
+	<!-- view为块级元素 独占一行 -->
+	<view class="view-bck">view独占一行</view>
+	<!-- hover-class:设置点击样式 hover-start-time:设置点击样式延迟毫秒显示 hover-stay-time:设置点击后样式延迟毫秒消失 -->
+	<view hover-class="view-hover" class="view-h50 centered" hover-start-time='0' hover-stay-time='1000'>按下变色</view>
+	<!-- hover-stop-propagation属性默认为false 阻止本节点的祖先节点出现点击态 但阻止不了bindtap点击事件 -->
+	<view hover-class="view-hover1" class="view-h150 view-w150 view-bck1" bindtap="view_click">
+		<view hover-class="view-hover2" class="view-h100 view-w100 view-bck2">
+			<view hover-class="view-hover" class="view-h50 view-w50 view-bck" hover-stop-propagation></view>
+		</view>
+	</view>
+</view>
+
+<!-- scroll-viwe组件 -->
+<view>
+  <!-- scroll-x水平滚动;scroll-y垂直滚动 -->
+  <scroll-view class="scroll-v1" scroll-x>
+    <view wx:for="{{10}}" class="scroll-v1-v1"></view>
+  </scroll-view>
+  <!-- 监听事件bindscroll 监听滚动的位置 -->
+  <scroll-view class="scroll-v2" scroll-y bindscroll="scroll_vY">
+    <view wx:for="{{10}}" class="scroll-v2-v1"></view>
+  </scroll-view>
+</view>
+
+<!-- image组件 -->
+<view>
+	<!-- image组件默认有自己的大小320px*240px mode设置图片裁剪缩放模式 -->
+	<image src="/assets/img/ax801-kkojr.jpg" mode="aspectFill" />
+	<!-- 选择相册中的图片 -->
+	<button bindtap="select_album">选择图片</button>
+	<image src="{{albumImg}}"  mode="aspectFit" />
+  <!-- show-menu-by-longpress属性 默认false 长按图片显示识别小程序码菜单 -->
+	<image src="/assets/img/ax801-kkojr.jpg" show-menu-by-longpress mode="bottom" />
+  <!-- lazy-load属性 默认false 图片懒加载在进入一定范围是才开始加载，加载上下三屏 bindload当图片加载完成后触发-->
+	<image wx:for="{{3}}" src="/assets/img/ax801-kkojr.jpg" bindload="load_img" lazy-load />
+</view>

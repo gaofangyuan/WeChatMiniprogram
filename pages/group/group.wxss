@@ -1,0 +1,79 @@
+/* pages/group/group.wxss */
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+input {
+  border: 1px solid #82C8FF;
+  margin: 10px 30px;
+}
+
+.btn-hover {
+  background: #82C8FF;
+  color: #FFFFFF;
+}
+
+.view-bck {
+  background: #7FFFC8;
+}
+.view-bck1 {
+  background: #55DDFF;
+}
+.view-bck2 {
+  background: #DDDD33;
+}
+.view-hover {
+  background: #82C8FF;
+  color: #FFFFFF;
+}
+.view-hover1 {
+  background: #DD88DD;
+  color: #FFFFFF;
+}
+.view-hover2 {
+  background: #DD5555;
+  color: #FFFFFF;
+}
+.view-h50 {
+  height: 50px;
+  line-height: 50px;
+}
+.view-h100 {
+  height: 100px;
+}
+.view-h150 {
+  height: 150px;
+}
+.view-w50 {
+  width: 50px;
+}
+.view-w100 {
+  width: 100px;
+}
+.view-w150 {
+  width: 150px;
+}
+
+.scroll-v1 {
+  background: #F2F2F2;
+  white-space: nowrap;
+  margin: 10px 0;
+}
+.scroll-v1-v1 {
+  width: 50px;
+  height: 50px;
+  background: #82C8FF;
+  margin: 5px;
+  display: inline-block;
+}
+.scroll-v2 {
+  background: #F2F2F2;
+  height: 120px;
+  margin: 10px 0;
+}
+.scroll-v2-v1 {
+  width: calc(100% - 10px);
+  height: 50px;
+  background: #82C8FF;
+  margin: 5px;
+}
