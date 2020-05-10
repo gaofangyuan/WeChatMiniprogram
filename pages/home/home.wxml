@@ -2,15 +2,6 @@
 
 <!-- 列表展示 wx:for item -->
 <view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
-<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
-<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
-<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
-<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
-<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
-<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
-<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
-<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
-<view wx:for="{{content}}">id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}</view>
 <view>{{list.Server}}</view>
 <view>{{list.Date}}</view>
 
@@ -20,9 +11,10 @@
 <button size="mini" bindtap="plus_1">+</button>
 <button size="mini" bindtap="reduce_1">-</button>
 
-<view>
-	<!-- 拉取用户信息，参考https://developers.weixin.qq.com/miniprogram/dev/component/open-data.html -->
-	<open-data type="userLanguage"></open-data>
-	<!--点击弹窗授权获取用户信息 参考https://developers.weixin.qq.com/miniprogram/dev/component/button.html -->
-	<button open-type="getUserInfo" size="mini" bindgetuserinfo="gain_userInfo">获取授权</button>
-</view>
+<text>\n</text>
+<!-- 拉取用户信息，参考https://developers.weixin.qq.com/miniprogram/dev/component/open-data.html -->
+<open-data type="userLanguage"></open-data>
+<text>\n</text>
+<!--点击弹窗授权获取用户信息 参考https://developers.weixin.qq.com/miniprogram/dev/component/button.html -->
+<button open-type="getUserInfo" size="mini" bindgetuserinfo="gain_userInfo">获取授权</button>
+

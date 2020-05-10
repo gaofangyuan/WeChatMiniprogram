@@ -1,2 +1,4 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<text>关于\n</text>
+<!-- 默认text文本不可选中 设置selectable属性控制 -->
+<text selectable="true">关于我们\n</text>
