@@ -70,6 +70,19 @@
 					"pathName": "pages/group/group",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "wxml语法",
+					"pathName": "pages/wxmlGrammar/wxmlGrammar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "wxs使用",
+					"pathName": "pages/wxsUse/wxsUse",
+					"scene": null
 				}
 			]
 		}

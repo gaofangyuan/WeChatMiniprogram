@@ -2,7 +2,9 @@
   "pages": [
     "pages/home/home",
     "pages/about/about",
-    "pages/group/group"
+    "pages/group/group",
+    "pages/wxmlGrammar/wxmlGrammar",
+    "pages/wxsUse/wxsUse"
   ],
   "window": {
     "navigationBarBackgroundColor": "#82C8FF",

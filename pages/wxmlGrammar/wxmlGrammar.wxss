@@ -1,0 +1,16 @@
+/* pages/wxmlGrammar/wxmlGrammar.wxss */
+.cs-v1 {
+  background: #F2F2F2;
+  width: 375rpx;
+  height: 375rpx;
+  margin: 0 auto;
+}
+.cs-v2 {
+  background: #F2F2F2;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
+.active {
+  background: #82C8FF;
+}

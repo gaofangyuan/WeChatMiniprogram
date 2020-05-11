@@ -3,9 +3,9 @@
 <view>
 	<button>按钮</button>
 	<!-- size属性 变小mini -->
-	<button size='mini'>按钮</button>
+	<button size='mini' style="width: 375rpx;">按钮</button>
 	<!-- type属性 'primary';'default';'warn' 默认default属性 -->
-	<button size='mini' type='default'>按钮</button>
+	<button size='mini' type='default' style="width: 375rpx;">按钮</button>
 	<button size='mini' type='primary'>按钮</button>
 	<button size='mini' type='warn'>按钮</button>
 	<!-- plain属性 镂空效果 -->

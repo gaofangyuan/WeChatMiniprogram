@@ -1,0 +1,18 @@
+<!-- wxs使用 -->
+<wxs module="module1">
+  //ES5语法
+  var message = "wxs使用";
+  function sum(num1, num2) {
+    return num1 + num2
+  }
+
+  //模块化导出写法
+  module.exports = {
+    message: message,
+    sum: sum
+  }
+</wxs>
+<!-- 调用wxs{{module名称.变量/函数}} -->
+<view>{{module1.message}}</view>
+
+<view>{{module1.sum(10,15)}}</view>

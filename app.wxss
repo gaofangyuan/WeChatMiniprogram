@@ -1,0 +1,6 @@
+/* rpx (responsive pixel)：可以根据屏幕宽度自适应。规定屏幕宽度为750rpx。750rpx相当于css的100% 
+  iPhone6中，1rpx=0.5px
+*/
+/* 官方样式库https://github.com/Tencent/weui-wxss */
+/* @import导入样式表 */
+@import './assets/style/css.wxss';
