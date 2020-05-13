@@ -1,5 +1,5 @@
 <!-- wxs使用 -->
-<wxs module="module1">
+<!-- <wxs module="module1">
   //ES5语法
   var message = "wxs使用";
   function sum(num1, num2) {
@@ -11,8 +11,21 @@
     message: message,
     sum: sum
   }
-</wxs>
-<!-- 调用wxs{{module名称.变量/函数}} -->
-<view>{{module1.message}}</view>
+</wxs> -->
 
+<!-- 引入wxs文件无法使用绝对路径 -->
+<wxs src="../../wxs/wxs.wxs" module="module1" />
+
+<!-- 调用wxs{{module名称.变量/函数}} -->
+<!-- <view>{{module1.message}}</view>
 <view>{{module1.sum(10,15)}}</view>
+<view>{{module1.price_format(price)}}</view>
+<view>{{module1.time_format(time)}}</view> -->
+
+
+<!-- 事件传参 -->
+<view class="content">
+  <block wx:for="{{title}}" wx:key="index">
+    <view class="item" bindtap="clk_item" data-v_item="{{item}}" data-v_index="{{index}}">{{item}}</view>
+  </block>
+</view>

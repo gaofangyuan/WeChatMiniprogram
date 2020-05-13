@@ -5,7 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    price: '16.1251222a',
+    title: ['衣服', '裤子', '鞋帽'],
+    time: 1368360620
+  },
+  clk_item(event) {
+    console.log(event);
+    const dataset = event.target.dataset;
+    var vIndex = dataset.v_index;
+    var vItem = dataset.v_item;
+    console.log(vIndex, vItem);
   },
 
   /**

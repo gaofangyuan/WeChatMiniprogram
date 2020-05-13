@@ -1,0 +1,39 @@
+//ES5语法
+var message = "wxs使用";
+function sum(num1, num2) {
+  return num1 + num2
+}
+
+function price_format(price) {
+  // parseFloat 解析为浮点类型数据
+  var parse_price = parseFloat(price);
+  var number = 2;
+  //返回值保留2位小数
+  return parse_price.toFixed(number);
+}
+
+// 时间戳转换为日期时间格式
+function time_format(time) {
+  // 判断时间戳是否为13位数，如果不是则*1000，时间戳只有13位数(带毫秒)和10(不带毫秒)位数的
+  if(time.toString().length == 13){
+    var tme = getDate(time);
+  }else{
+    var tme = getDate(time * 1000);
+  }
+  var Y = tme.getFullYear();
+  var M = (tme.getMonth() + 1 < 10 ? '0' + (tme.getMonth() + 1) : tme.getMonth() + 1);
+  var D = tme.getDate();
+  var h = tme.getHours();
+  var m = tme.getMinutes();
+  var s = tme.getSeconds();
+  tem1 = Y + '-' + M + '-' + D + ' ' + h + ':' + m + ':' + s
+  return tem1;
+}
+
+//模块化导出写法
+module.exports = {
+  message: message,
+  sum: sum,
+  price_format: price_format,
+  time_format: time_format
+}
