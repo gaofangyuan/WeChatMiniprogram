@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cpn-mini-a": "/components/cpn-mini-a/cpn-mini-a"
+  }
+}

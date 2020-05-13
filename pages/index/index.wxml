@@ -1,0 +1,3 @@
+<cpn_1 />
+<!-- properties在组件js文件中设置变量: 数据类型, -->
+<cpn-mini-a btn="properties传值" content="传值写法在组件cpn-mini-a.js文件中" />

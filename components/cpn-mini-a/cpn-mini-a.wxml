@@ -1,0 +1,5 @@
+<!--components/cpn-mini-a/cpn-mini-a.wxml-->
+<view style="margin: 0 20rpx">
+  <button type="primary" style="width: 100%;">{{btn}}</button>
+  <text class="content">{{content}}\n</text>
+</view>

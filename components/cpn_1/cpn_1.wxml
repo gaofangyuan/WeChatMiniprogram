@@ -1,0 +1,16 @@
+<view style="margin: 0 20rpx">
+  <text class="title">标题</text>
+  <text class="content">
+  自定义组件内容：
+  组件命名规则“小写字母、下划线(_)和横杠(-)任意组合”;
+  组件内不能使用id选择器、属性选择器、标签选择器;
+  组件样式影响引用组件页面在组件js页面使用：
+  Component({
+    options{
+      //styleIsolation组件样式隔离，默认值isolated隔离；shared组件和页面相互受影响；apply-shared页面样式影响组件；
+      styleIsolation: "shared"
+    }
+  })
+  </text>
+</view>
+<cpn-mini-a btn="组件嵌套" />
